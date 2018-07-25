@@ -1,0 +1,48 @@
+html {
+	position: relative;
+	font-family: 微軟正黑體;
+}
+html:before { 
+	content: "";
+	position: absolute;
+	background-image: url('images/background.jpg');
+	background-repeat: repeat;
+	background-position: top center;
+	background-attachment: scroll;
+	background-color: #FFDD55;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	z-index: -1;
+}
+.linkages {
+	border: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	background-color: #88AA00;
+}
+.page_title {
+	text-align: center;
+}
+.content_title {
+	text-align: left;
+	padding-left: 20px;
+	font-size: 26px;
+}
+.content {
+	text-align: left;
+	font-size: 18px;
+	background-color: #EEFFBB;
+	padding-left: 40px;
+}
+.emphasized_words {
+	font-size: 22px;
+	color: red;
+}
+.details {
+	font-size: 14px;
+	text-align: left;
+	margin-left: 20px;
+	color: grey;
+}

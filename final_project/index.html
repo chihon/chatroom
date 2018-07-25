@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<?php
+    session_start();
+    if (!isset(_SESSION['id'])) {
+        header('Location: ../Final/index.php');
+        exit();
+    }
+?>
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Final Project</title>
+	</head>
+
+	<body>
+		<!--運作方式介紹、成長規則、社交機制與角色養成頁面的連結-->
+		<h1 class="page_title">CNL Final Project Group 5</h1>
+		<hr>
+		
+		<!--連結表-->
+		<table class="linkages">
+			<tr>
+				<th>&nbsp;<a href="index.html">首頁</a>&nbsp;</th>
+				<th>&nbsp;<a href="function.html">獨家優惠</a>&nbsp;</th>
+				<th>&nbsp;<a href="../xxxx/php01.php">您的進度</a>&nbsp;</th>
+				<th>&nbsp;<a href="../Final/chat.php">匿名聊天</a>&nbsp;</th>
+				<th>&nbsp;<a href="../Final/index.php">登出</a>&nbsp;</th>
+			</tr>
+		</table>
+		
+		<div class="content_title"><b>您好，歡迎使用本店免費Wifi！</b></div>
+		<ul class="content">
+		<li>本Wifi除了提供上網服務外，
+		您還可以透過累積上網時數、
+		消費金額來獲取獨家優惠！
+		<br>
+		<a href="function.html">>>更多資訊...</a>
+		<br><br>
+		<li>在本店除了品嚐現煮咖啡、精緻甜食之外，
+		您亦可以透過本網站認識周遭的新朋友！
+		<br>
+		<a href="../Final/chat.php">>>更多資訊...</a>
+		<br>
+		</ul>
+		
+		<h3>本店熱銷：</h3>
+		<table>
+		<tr>
+			<th><img src="images/cake.jpg" width="250" height="200"></th>
+			<th>
+				<b class="emphasized_words">NO.1</b> 提拉米蘇($69NTD)
+				<p class="details">
+					提拉米蘇是義大利的著名糕點。
+					先用濃縮咖啡及馬沙拉甜酒調成咖啡酒液，
+					沾潤蛋糕後鋪在底層，
+					抹上一層馬斯卡彭起士、蛋黃、糖的混合物，
+					再抹上一層奶油或巧克力碎片，
+					最後淋上巧克力醬與擺上薄荷葉，
+					義大利的風味在您口中呈現。
+				</p>
+			</th>
+		</tr>
+		<tr>
+			<th><img src="images/coffee.jpg" width="250" height="200"></th>
+			<th>
+				<b class="emphasized_words">NO.2</b> 焦糖瑪奇朵($109NTD)
+				<p class="details">
+					焦糖瑪奇朵是一種在香濃熱牛奶上加入義式濃縮咖啡、香草，
+					最後淋上純正焦糖而製成的飲品，
+					特點是在一杯飲品裡可以喝到三種不同的口味。
+					瑪奇朵是義大利文，意思是「烙印」，
+					搭配上層所淋的焦糖，
+					意思是將「甜蜜的印記」帶入您的口中。
+				</p>
+			</th>
+		</tr>
+		<tr>
+			<th><img src="images/muffin.jpg" width="250" height="200"></th>
+			<th>
+				<b class="emphasized_words">NO.3</b> 現烤英式馬芬($49NTD)
+				<p class="details">
+					現烤英式馬芬結合了可可的濃郁、鮮奶的香甜以及藍莓的微酸，
+					要帶給您最多層次的味覺風暴。
+					本店堅持現點現烤，
+					外皮的酥脆與內餡的鬆軟是馬芬的最大吸引人的地方，
+					綿密的口感搭配上一杯冰咖啡絕對是午茶的一大享受。
+				</p>
+			</th>
+		</tr>
+		</table>
+	
+	</body>
+</html>
